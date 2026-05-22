@@ -124,6 +124,9 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 // 工具调用处理
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
+  if (!args) {
+    return { content: [{ type: 'text', text: '错误: 缺少参数' }], isError: true };
+  }
 
   try {
     switch (name) {
