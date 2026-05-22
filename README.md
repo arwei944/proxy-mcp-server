@@ -1,3 +1,12 @@
+---
+title: Proxy MCP Server
+emoji: 🌐
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+pinned: false
+---
+
 # Proxy MCP Server
 
 一个带有 macOS 极简风格管理界面的 MCP (Model Context Protocol) 代理服务器。
